@@ -4,7 +4,7 @@ import psycopg2
 app = Flask(__name__)
 
 try:
-    conn = psycopg2.connect("dbname='myduka' user='posgres' host='localhost' password='12345678'")
+    conn = psycopg2.connect("dbname='myduka' user='postgres' host='localhost' password='12345678'")
     print("Database Connected Successfully")
 except Exception as e:
     print("I am unable to connect to the database",e)
