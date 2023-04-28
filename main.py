@@ -9,6 +9,10 @@ try:
 except Exception as e:
     print("I am unable to connect to the database",e)
 
+@app.route("/save-products")
+def save_products():
+    pass
+
 
 @app.route('/')
 def home():
